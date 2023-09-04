@@ -65,7 +65,7 @@ public class ExcelUtility {
 	 public void writeToExcel(String sheetName, int rowNum, int cellNum, String value, String excelPath)
 	 {
 		Sheet sheet=workbook.getSheet(sheetName);
-		sheet.getRow(rowNum).createCell(cellNum).setCellValue(value);
+
 		FileOutputStream fos=null;
 		try {
 			fos=new FileOutputStream(excelPath);
